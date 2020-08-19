@@ -7,6 +7,9 @@
     --hue-wrong:0;
     --hue-correct:145;
 }
+#right-answers {
+    float: right;
+}
 body{
     --hue: var(--hue-neutral);
     padding: 0;
@@ -17,6 +20,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: hsl(var(--hue), 100%, 20%);
+    font-size: 2rem;
 }
 
 body.correct {
@@ -28,8 +32,8 @@ body.wrong {
 }
 
 .container {
-    width: 800px;
-    max-width: 80%;
+    width: 500px;
+    max-width: 60%;
     background-color: white;
     border-radius:5px;
     padding: 10px;
@@ -50,6 +54,7 @@ body.wrong {
     padding: 5px 10px;
     color: white;
     outline: none;
+    font-size: 1.5rem;
 }
 
 .btn:hover {
